@@ -17,7 +17,7 @@ $ gatsby develop
 
 The site will be available at http://localhost:8000 and the GraphQL explorer at http://localhost:8000/___graphql
 
-## Queries
+## Queries to load content from local Markdown files
 
 As said, Gatsby uses GraphQL internally as an API, in this case there's two queries. The first one is to get all the Markdown files on `src/pages/index.tsx`:
 
