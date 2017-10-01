@@ -1,6 +1,8 @@
 # Gatbsy.js barebones Markdown + TypeScript example
 
-A very simple example of using Gatsby.js and it's GraphQL data layer to fetch and render Markdown. In addition the TypeScript support is enabled.
+Gatsby.js is a static site generator that uses React as a templating / view engine and GraphQL as a data layer for doing queries to content repositories (local or remote).
+
+This is very simple example of using <a href="https://www.gatsbyjs.org">Gatsby.js</a> and it's <a href="http://graphql.org">GraphQL</a> data layer to fetch and render local <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> files. In addition the <a href="http://typescriptlang.org">TypeScript</a> support is enabled.
 
 This project is based on <a href="https://www.gatsbyjs.org/tutorial/">the official tutorial</a> and is mostly just a simple boilerplate if I choose to use this somewhere, some day.
 
