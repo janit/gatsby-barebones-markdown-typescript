@@ -17,6 +17,47 @@ $ gatsby develop
 
 The site will be available at http://localhost:8000 and the GraphQL explorer at http://localhost:8000/___graphql
 
+## Queries
+
+As said, Gatsby uses GraphQL internally as an API, in this case there's two queries. The first one is to get all the Markdown files on `src/pages/index.tsx`:
+
+```
+query IndexQuery {
+  allMarkdownRemark {
+    totalCount
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "DD MMMM, YYYY")
+        }
+        fields {
+          slug
+        }
+        excerpt
+      }
+    }
+  }
+}
+```
+
+to display individual posts, the template `src/templates/post.tsx` uses the following query:
+
+```
+query BlogPostQuery($slug: String!) {
+  markdownRemark(fields: { slug: { eq: $slug } }) {
+    html
+    frontmatter {
+      title
+      date
+    }
+  }
+}
+```
+
+Note that both of these are easy to construct and develop using the included GraphiQL shell running locally at: http://localhost:8000/___graphql
+
 ## File structure
 
 Here is a brief overview of the file structure:
