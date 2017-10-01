@@ -21,7 +21,7 @@ The site will be available at http://localhost:8000 and the GraphQL explorer at 
 
 As said, Gatsby uses GraphQL internally as an API, in this case there's two queries. The first one is to get all the Markdown files on `src/pages/index.tsx`:
 
-```
+```graphql
 query IndexQuery {
   allMarkdownRemark {
     totalCount
@@ -44,7 +44,7 @@ query IndexQuery {
 
 to display individual posts, the template `src/templates/post.tsx` uses the following query:
 
-```
+```graphql
 query BlogPostQuery($slug: String!) {
   markdownRemark(fields: { slug: { eq: $slug } }) {
     html
