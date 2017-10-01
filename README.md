@@ -1,4 +1,4 @@
-# Gatbsy.js barebones Markdown + TypeScript example
+# Gatsby.js barebones Markdown + TypeScript example
 
 Gatsby.js is a static site generator that uses React as a templating / view engine and GraphQL as a data layer for doing queries to content repositories (local or remote).
 
@@ -17,7 +17,7 @@ $ gatsby develop
 
 The site will be available at http://localhost:8000 and the GraphQL explorer at http://localhost:8000/___graphql
 
-## Queries to load content from local Markdown files
+## GraphQL queries to load content from local Markdown files
 
 As said, Gatsby uses GraphQL internally as an API, in this case there's two queries. The first one is to get all the Markdown files on `src/pages/index.tsx`:
 
